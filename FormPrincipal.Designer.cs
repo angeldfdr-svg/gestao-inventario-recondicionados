@@ -215,7 +215,7 @@ namespace GestaoInventarioRecondicionados
             this.cbEstado.Location = new System.Drawing.Point(16, 215);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(308, 25);
-            this.cbEstado.TabIndex = 5;
+            this.cbEstado.SelectedIndexChanged += new System.EventHandler(this.CbEstado_SelectedIndexChanged);
             // 
             // lblEstado
             // 
@@ -236,6 +236,7 @@ namespace GestaoInventarioRecondicionados
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(308, 25);
             this.cbCategoria.TabIndex = 3;
+            this.cbCategoria.SelectedIndexChanged += new System.EventHandler(this.CbCategoria_SelectedIndexChanged);
             // 
             // lblCategoria
             // 
@@ -414,6 +415,7 @@ namespace GestaoInventarioRecondicionados
             this.dgvEquipamentos.Size = new System.Drawing.Size(710, 420);
             this.dgvEquipamentos.TabIndex = 3;
             this.dgvEquipamentos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEquipamentos_CellClick);
+            this.dgvEquipamentos.SelectionChanged += new System.EventHandler(this.DgvEquipamentos_SelectionChanged);
             // 
             // colNome
             // 
